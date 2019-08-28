@@ -2,19 +2,20 @@ package com.tw.vapasi;
 
 //  Four sided closed shape with right angle to each other
 class Rectangle {
-    private float length;
-    private float breadth;
+    private static final int TwiceOfDiameterAddition = 2;
+    private double length;
+    private double breadth;
 
-    Rectangle(float length, float breadth) {
+    Rectangle(double length, double breadth) {
         this.length = length;
         this.breadth = breadth;
     }
 
-    float area() {
+    double area() {
         return length * breadth;
     }
 
-    float perimeter() {
-        return 2 * (length + breadth);
+    double perimeter() {
+        return TwiceOfDiameterAddition * (length + breadth);
     }
 }

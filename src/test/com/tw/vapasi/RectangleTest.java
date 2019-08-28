@@ -4,22 +4,22 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RectangleTest {
     @Test
-    void calculateAreaForDimension1_2() {
-        Rectangle rectangle = new Rectangle(1, 2);
-        assertEquals(2, rectangle.area());
+    void expectAreaForDimension1_2() {
+        Rectangle rectangle = new Rectangle(1.0, 2.0);
+        assertEquals(2.0, rectangle.area());
     }
     @Test
-    void calculateAreaForDimension7_5() {
+    void expectAreaForDimension7_5() {
         Rectangle rectangle = new Rectangle(7, 5);
         assertEquals(35, rectangle.area());
     }
     @Test
-    void calculatePerimeterForDimension1_2() {
+    void expectPerimeterForDimension1_2() {
         Rectangle rectangle = new Rectangle(1, 2);
         assertEquals(6, rectangle.perimeter());
     }
     @Test
-    void calculatePerimeterForDimension7_5() {
+    void expectPerimeterForDimension7_5() {
         Rectangle rectangle = new Rectangle(7, 5);
         assertEquals(24, rectangle.perimeter());
     }
