@@ -13,4 +13,9 @@ class Rectangle {
     float area() {
         return length * breadth;
     }
+
+    float perimeter()
+    {
+        return 6;
+    }
 }

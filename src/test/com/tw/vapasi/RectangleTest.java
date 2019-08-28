@@ -13,4 +13,10 @@ class RectangleTest {
         Rectangle rectangle = new Rectangle(7, 5);
         assertEquals(35, rectangle.area());
     }
+    @Test
+    void calculatePerimeterForDimension1_2() {
+        Rectangle rectangle = new Rectangle(1, 2);
+        assertEquals(6, rectangle.perimeter());
+    }
+
 }
