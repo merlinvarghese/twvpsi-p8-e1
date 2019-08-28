@@ -1,9 +1,16 @@
 package com.tw.vapasi;
 
-import java.awt.geom.Area;
-
+//  Four sided closed shape with right angle to each other
 class Rectangle {
-    double calculateArea(double length, double breadth) {
-        return 2;
+    private float length;
+    private float breadth;
+
+    Rectangle(float length, float breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    float area() {
+        return length * breadth;
     }
 }

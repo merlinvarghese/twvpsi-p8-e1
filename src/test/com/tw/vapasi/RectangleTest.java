@@ -1,14 +1,16 @@
 package com.tw.vapasi;
-
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RectangleTest {
-
-    private Rectangle rectangle = new Rectangle();
     @Test
-    void calculateAreaForDimension1_2( )
-    {
-        Assertions.assertEquals( 2,rectangle.calculateArea(1,2));
+    void calculateAreaForDimension1_2() {
+        Rectangle rectangle = new Rectangle(1, 2);
+        assertEquals(2, rectangle.area());
+    }
+    @Test
+    void calculateAreaForDimension7_5() {
+        Rectangle rectangle = new Rectangle(7, 5);
+        assertEquals(35, rectangle.area());
     }
 }
