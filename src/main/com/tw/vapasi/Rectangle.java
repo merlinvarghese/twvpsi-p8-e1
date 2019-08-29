@@ -6,9 +6,9 @@ class Rectangle {
     private double length;
     private double breadth;
 
-    Rectangle(double length, double breadth) {
-        this.length = length;
-        this.breadth = breadth;
+     private Rectangle(double length, double breadth) {
+         this.length=length;
+         this.breadth=breadth;
     }
 
     double area() {
@@ -17,5 +17,14 @@ class Rectangle {
 
     double perimeter() {
         return TwiceOfDiameterAddition * (length + breadth);
+    }
+
+    static Rectangle createSquare(double side)
+    {
+       return  new Rectangle(side,side);
+    }
+    static Rectangle createRectangle(double length,double breadth)
+    {
+        return  new Rectangle(length,breadth);
     }
 }
